@@ -1,0 +1,29 @@
+@import "tailwindcss";
+:root {
+  --primary: #0aad0a;
+}
+@layer components {
+  .form-control {
+    @apply outline-none border-2 border-gray-400 px-3 py-1 rounded cursor-pointer;
+    opacity: 50%;
+  }
+
+  .btn-primary {
+    @apply px-4 py-2 uppercase text-white cursor-pointer;
+    background-color: var(--primary);
+  }
+  .text-primary {
+    color: var(--primary);
+  }
+  .bg-black-layer {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+body {
+  font-family: "Encode Sans Expanded", sans-serif;
+}
+#root {
+  position: relative;
+  min-height: 100vh;
+}
